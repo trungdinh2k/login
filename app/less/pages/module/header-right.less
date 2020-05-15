@@ -1,0 +1,129 @@
+#header {
+    box-shadow: 0 0 35px rgba(30, 71, 113, 0.2);
+    background: #fff;
+
+    .header-content {
+        padding: 32px;
+
+        .header-right {
+            display: table;
+            margin-left: auto;
+            position: relative;
+
+            .head {
+                padding-left: 40px;
+                position: relative;
+                background: #00a0ff;
+                padding-right: 35px;
+                border-radius: 21px;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    border-top: 6px solid #fff;
+                    border-right: 4px solid transparent;
+                    border-left: 4px solid transparent;
+                    position: absolute;
+                    top: 15px;
+                    right: 17px;
+                }
+
+                .img {
+                    position: absolute;
+                    left: 3px;
+                    top: 3px;
+                    width: 29px;
+                    height: 29px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        object-fit: cover;
+
+                    }
+                }
+
+                .username {
+                    margin: 0;
+                    color: #fff;
+                    line-height: 35px;
+                    font-size: 13px;
+                }
+            }
+            &:hover{
+                .content{
+                    transform: scale(1);
+                }
+            }
+
+            .content {
+                display: block;
+                position: absolute;
+                padding-top: 15px;
+                min-width: 100%;
+                white-space: nowrap;
+                right: 0;
+                transform: scale(0);
+                transform-origin: top center;
+                transition: all 0.3s;
+
+                .account-list {
+                    box-shadow: 5px 5px 20px rgba(30, 71, 113, .15);
+                    background: #fff;
+                    border-top: 3px solid #00a0ff;
+                    list-style-type: none;
+                    padding: 11px 0;
+                    padding-bottom: 21px;
+                    position: relative;
+                    &:after{
+                           content: "";
+    display: block;
+    border-bottom: 9px solid #00a0ff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    bottom: 100%;
+    right: 20px;
+    width: 0;
+                    }
+
+                    .account-list__item {
+                        .account-list__link {
+                            display: block;
+                            padding: 10px;
+                            font-size: 13px;
+                            position: relative;
+                            padding-left: 40px;
+                            color: #616e8e;
+                            transition: all 0.2s;
+                            &:hover{
+                                    color: #00a0ff;
+    background: #f7f7f7;
+    border-left: 2px solid;
+                            }
+
+                            .img {
+                                position: absolute;
+                                left: 16px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 991px)  {
+    #header {
+        .header-content {
+            padding: 15px;
+        }
+    }
+}

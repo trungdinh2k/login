@@ -1,0 +1,67 @@
+[aria-labelledby="id-61-title"],
+[aria-describedby="id-146-description"]{
+    display: none;
+}
+.section-dashboard{
+    .module-dashboard{
+        .module-content{
+            .dashboard-chart{
+                   max-width: 910px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 259px;
+    position: relative;
+                .chart-filter{
+                        position: absolute;
+top: 50%;
+                    transform: translateY(-50%);
+    left: 0;
+    max-width: 162px;
+                }
+                .chart-content{
+                      box-shadow: 5px 5px 20px rgba(30, 71, 113, 0.15);
+                       
+                    border-radius: 10px;
+                        padding-top: 50px;
+                    .chart{
+                         position: relative;
+padding-bottom: 58.4%;
+                    }
+                    #chartdiv{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            } 
+        }
+    }
+}
+@media only screen and (max-width: 1199px) and (min-width: 768px){
+    .section-dashboard {.module-dashboard {.module-content {.dashboard-chart{
+            padding-left: 193px;
+        }}}}
+}
+@media only screen and (max-width: 767px) {
+    .section-dashboard {.module-dashboard {.module-content {
+        
+        .dashboard-chart{
+            padding-left: 0;
+            .chart-filter{
+                padding-bottom: 30px;
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: unset;
+                display: flex;
+                width: 100%;
+                max-width: unset;
+                margin: -5px;
+                .item{
+                    margin: 5px;
+                }
+            }
+        }}}}
+}
